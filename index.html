@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Menu Umum – PUSDA Jatim</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg"><div class="dam"></div></div>
+    <div class="shade"></div>
+    <div class="wrap">
+      <section class="view on" id="v-menu">
+        <div id="slot-menu">
+          <div class="logo" id="logo">
+            <svg width="64" height="64" viewBox="0 0 64 64">
+              <path
+                d="M26 4c8 4 6 12 14 14-4 4-10 3-12 8-2 4 2 6 6 6-6 6-18 6-22 14 0-10 2-18 6-24 2-4 8-6 8-18z"
+                fill="#f5b21a"
+              />
+              <path
+                d="M2 48c10-8 24-4 34-6 8-2 14-8 24-10-4 14-18 24-34 22-10-1-18-2-24-6z"
+                fill="#1d4ea8"
+              />
+              <path
+                d="M8 54c8 4 20 6 30 2 6-2 10-5 12-8-8 8-26 12-42 6z"
+                fill="#2fb872"
+              />
+            </svg>
+            <div>
+              <b>PUSDA</b
+              ><small>DINAS PU SUMBER DAYA AIR<br />PROVINSI JAWA TIMUR</small>
+            </div>
+          </div>
+        </div>
+        <h1>Menu Umum</h1>
+        <div class="grid">
+          <button class="card" data-link="#">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 3h-4.2A3 3 0 0 0 12 1a3 3 0 0 0-2.8 2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM7 8h1.5v1.5H7zm3 0h7v1.5h-7zM7 11.5h1.5V13H7zm3 0h7V13h-7zM7 15h1.5v1.5H7zm3 0h7v1.5h-7z"
+              /></svg
+            >Permintaan<br />Barang
+          </button>
+          <button class="card" data-link="#">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M3 6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v3.5l5-3.2v11.4l-5-3.2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              /></svg
+            >Link Zoom
+          </button>
+          <button class="card" data-link="#">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M3 21v-2h2V4a1 1 0 0 1 .8-1l8-1.6a1 1 0 0 1 1.2 1V19h2v-8h3a1 1 0 0 1 1 1v7h1v2zm9-10a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+              /></svg
+            >Ruang Rapat
+          </button>
+          <button class="card" data-link="#">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 3 1 8l4 2v4.2c0 1.5 3 3 7 3s7-1.5 7-3V10l2-1v6h1V8zM12 12.5 5.3 9.3 12 6.2l6.7 3.1zM4 20c0-3 3.5-4.5 8-4.5s8 1.5 8 4.5z"
+              /></svg
+            >Permintaan<br />Magang
+          </button>
+          <button class="card" id="btn-cuti">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 10h14v10H5zm3 2v2h3v-2zm5 0v2h3v-2zm-5 4v2h3v-2z"
+              /></svg
+            >Pengajuan<br />Cuti
+          </button>
+        </div>
+      </section>
+
+      <section class="view" id="v-login">
+        <div class="pn lg">
+          <div
+            id="slot-login"
+            style="display: flex; justify-content: center"
+          ></div>
+          <h2>Login Pegawai</h2>
+          <hr />
+          <div class="nt w">
+            <b>Perhatian:</b> Login diperlukan agar pengajuan cuti tercatat atas
+            nama Anda.
+          </div>
+          <form id="lf" novalidate onsubmit="return false;">
+            <div class="fld row">
+              <i class="ic" data-i="user"></i
+              ><input
+                id="lu"
+                autocomplete="username"
+                placeholder="Username / NIP"
+              />
+            </div>
+            <div class="fld row pw">
+              <i class="ic" data-i="lock"></i
+              ><input
+                id="lpw"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Password"
+              /><button
+                type="button"
+                class="eye"
+                id="eye"
+                aria-label="Tampilkan password"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 5C7 5 2.7 8.1 1 12c1.7 3.9 6 7 11 7s9.3-3.1 11-7c-1.7-3.9-6-7-11-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="nt e hid" id="lerr" style="margin: 0"></div>
+          <div class="acts">
+            <button type="button" class="bk" id="lback">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"
+                /></svg
+              >Kembali</button
+            ><button type="button" class="pr" id="lgo">Masuk</button>
+          </div>
+          <p class="sm-t" style="text-align: center">
+            Akun demo: <b>pegawai</b> / <b>pusda123</b>
+          </p>
+        </div>
+      </section>
+
+      <section class="view" id="v-cuti">
+        <div class="cwrap">
+          <!-- KIRI: info + lacak -->
+          <div class="col">
+            <div>
+              <div class="ih">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2zm0-8h-2V7h2z"
+                  /></svg
+                >Info Ketentuan Cuti
+              </div>
+              <div class="tc">
+                <div class="tw">
+                  <table>
+                    <tr>
+                      <th>Jenis Cuti</th>
+                      <th>Syarat</th>
+                      <th>Maks.</th>
+                    </tr>
+                    <tr>
+                      <td>Tahunan</td>
+                      <td>Masa kerja min. 1 tahun</td>
+                      <td><span class="bd">12 hari kerja</span></td>
+                    </tr>
+                    <tr>
+                      <td>Besar</td>
+                      <td>Masa kerja min. 5 tahun</td>
+                      <td><span class="bd">3 bulan</span></td>
+                    </tr>
+                    <tr>
+                      <td>Sakit</td>
+                      <td>Lampirkan surat dokter</td>
+                      <td><span class="bd b">Sesuai surat</span></td>
+                    </tr>
+                    <tr>
+                      <td>Melahirkan</td>
+                      <td>Anak ke-1 s.d. ke-3</td>
+                      <td><span class="bd">3 bulan</span></td>
+                    </tr>
+                    <tr>
+                      <td>Alasan Penting</td>
+                      <td>Sesuai daftar alasan</td>
+                      <td><span class="bd">2 bulan</span></td>
+                    </tr>
+                    <tr>
+                      <td>Di Luar Tanggungan Negara</td>
+                      <td>Masa kerja min. 5 tahun</td>
+                      <td><span class="bd">3 tahun</span></td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="sm-t">
+                  <b>Alur:</b> pegawai mengajukan → atasan langsung memberi
+                  pertimbangan → pejabat berwenang memutuskan (setuju /
+                  tangguhkan / tolak) → kepegawaian mencatat.<br />Dasar: PP
+                  11/2017 dan Peraturan BKN 24/2017 jo. 7/2021. Sisa cuti
+                  tahunan tahun lalu maks. 6 hari kerja (total maks. 18; tidak
+                  diambil 2 tahun berturut-turut maks. 24).
+                </p>
+              </div>
+            </div>
+            <div class="pn" style="padding-top: 16px">
+              <h2 style="font-size: 22px">Lacak Pengajuan Cuti</h2>
+              <hr />
+              <div class="fld row">
+                <svg class="ic" viewBox="0 0 24 24">
+                  <path
+                    d="M10 4a6 6 0 1 0 3.7 10.7l5 5 1.4-1.4-5-5A6 6 0 0 0 10 4zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"
+                  /></svg
+                ><input id="cari" placeholder="Cari nomor pengajuan / NIP..." />
+              </div>
+              <div id="list"></div>
+              <p class="sm-t">
+                Tombol persetujuan pada kartu hanya simulasi alur atasan dan
+                pejabat. Pada sistem sebenarnya tombol itu ada di akun
+                masing-masing dan terhubung ke server.
+              </p>
+            </div>
+          </div>
+
+          <!-- KANAN: form -->
+          <div class="pn">
+            <div
+              id="slot-cuti"
+              style="display: flex; justify-content: center"
+            ></div>
+            <h2>Form Pengajuan Cuti</h2>
+            <hr />
+            <div class="who">
+              <span id="whoTxt"></span
+              ><button type="button" class="sbtn" id="logout">Keluar</button>
+            </div>
+            <div id="wiz">
+              <form id="fm" novalidate onsubmit="return false;">
+                <div class="step on">
+                  <div class="nt w">
+                    <b>Perhatian:</b> Sebelum mengajukan, pastikan membaca
+                    ketentuan cuti pada tabel dan menyiapkan lampiran yang
+                    diperlukan.
+                  </div>
+                  <div class="sec">
+                    <i class="ic" data-i="user"></i>Data Pegawai<span
+                      >1 / 3</span
+                    >
+                  </div>
+                  <div class="fld row">
+                    <i class="ic" data-i="user"></i
+                    ><input id="nama" placeholder="Nama Lengkap Pegawai" />
+                  </div>
+                  <div class="fld row">
+                    <i class="ic" data-i="build"></i
+                    ><select id="unit">
+                      <option value="">-- Pilih Bidang / Bagian --</option>
+                      <option>Sekretariat</option>
+                      <option>PSDA</option>
+                      <option>Lainnya</option>
+                    </select>
+                  </div>
+                  <div class="g2">
+                    <div class="fld">
+                      <i class="ic" data-i="id"></i
+                      ><input
+                        id="nip"
+                        inputmode="numeric"
+                        maxlength="18"
+                        placeholder="NIP (18 digit)"
+                      />
+                    </div>
+                    <div class="fld">
+                      <i class="ic" data-i="phone"></i
+                      ><input
+                        id="hp"
+                        type="tel"
+                        inputmode="tel"
+                        placeholder="Nomor HP / WhatsApp"
+                      />
+                    </div>
+                  </div>
+                  <div class="g2">
+                    <div class="fld">
+                      <i class="ic" data-i="work"></i
+                      ><input id="jabatan" placeholder="Jabatan" />
+                    </div>
+                    <div class="fld">
+                      <i class="ic" data-i="clock"></i
+                      ><input
+                        id="mk"
+                        type="number"
+                        min="0"
+                        max="45"
+                        placeholder="Masa Kerja (tahun)"
+                      />
+                    </div>
+                  </div>
+                  <div class="fld row">
+                    <i class="ic" data-i="user"></i
+                    ><input id="atasan" placeholder="Nama Atasan Langsung" />
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="sec">
+                    <i class="ic" data-i="tag"></i>Detail Cuti<span>2 / 3</span>
+                  </div>
+                  <div class="fld row">
+                    <i class="ic" data-i="tag"></i
+                    ><select id="jenis">
+                      <option value="">-- Pilih Jenis Cuti --</option>
+                      <option>Cuti Tahunan</option>
+                      <option>Cuti Besar</option>
+                      <option>Cuti Sakit</option>
+                      <option>Cuti Melahirkan</option>
+                      <option>Cuti Karena Alasan Penting</option>
+                      <option>Cuti di Luar Tanggungan Negara</option>
+                    </select>
+                  </div>
+                  <div class="nt i hid" id="jnote"></div>
+                  <div class="x x-th hid">
+                    <div class="fld row">
+                      <i class="ic" data-i="list"></i
+                      ><input
+                        id="diambil"
+                        type="number"
+                        min="0"
+                        max="12"
+                        placeholder="Cuti tahunan sudah diambil tahun ini (hari kerja)"
+                      />
+                    </div>
+                    <div class="g2">
+                      <div class="fld">
+                        <i class="ic" data-i="list"></i
+                        ><input
+                          id="n1"
+                          type="number"
+                          min="0"
+                          max="6"
+                          placeholder="Sisa cuti N-1 (maks 6)"
+                        />
+                      </div>
+                      <div class="fld">
+                        <i class="ic" data-i="list"></i
+                        ><input
+                          id="n2"
+                          type="number"
+                          min="0"
+                          max="6"
+                          placeholder="Sisa cuti N-2 (maks 6)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="x x-lh hid fld row">
+                    <i class="ic" data-i="user"></i
+                    ><select id="anak">
+                      <option value="1">Kelahiran anak ke-1</option>
+                      <option value="2">Kelahiran anak ke-2</option>
+                      <option value="3">Kelahiran anak ke-3</option>
+                      <option value="4">Kelahiran anak ke-4 atau lebih</option>
+                    </select>
+                  </div>
+                  <div class="x x-pn hid fld row">
+                    <i class="ic" data-i="info"></i
+                    ><select id="sub">
+                      <option value="">-- Pilih Alasan Penting --</option>
+                      <option>
+                        Ibu/bapak/istri/suami/anak/adik/kakak/mertua/menantu
+                        sakit keras atau meninggal dunia
+                      </option>
+                      <option>Melangsungkan perkawinan pertama</option>
+                      <option>Mendampingi istri bersalin</option>
+                      <option>Musibah kebakaran/bencana alam</option>
+                      <option>Alasan penting lainnya</option>
+                    </select>
+                  </div>
+                  <div class="g2">
+                    <div>
+                      <label class="lb" for="mulai">Tanggal Mulai</label>
+                      <div class="fld">
+                        <i class="ic" data-i="cal"></i
+                        ><input type="date" id="mulai" />
+                      </div>
+                    </div>
+                    <div>
+                      <label class="lb" for="selesai">Tanggal Selesai</label>
+                      <div class="fld">
+                        <i class="ic" data-i="cal"></i
+                        ><input type="date" id="selesai" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nt i" id="durasi">Lama cuti: –</div>
+                  <label class="lb" for="alasan">Alasan Cuti</label>
+                  <div class="fld ta row">
+                    <i class="ic" data-i="text"></i
+                    ><textarea
+                      id="alasan"
+                      placeholder="Jelaskan alasan pengajuan cuti..."
+                    ></textarea>
+                  </div>
+                  <div class="fld row">
+                    <i class="ic" data-i="home"></i
+                    ><input
+                      id="alamat"
+                      placeholder="Alamat Selama Menjalankan Cuti"
+                    />
+                  </div>
+                  <div class="x x-lp hid" id="lampbox">
+                    <label class="lb" id="lamplb" for="lamp"
+                      >Lampiran (max 3MB)</label
+                    ><input
+                      type="file"
+                      id="lamp"
+                      accept=".pdf,.jpg,.jpeg,.png"
+                    />
+                  </div>
+                </div>
+
+                <div class="step">
+                  <div class="sec">
+                    <i class="ic" data-i="info"></i>Tinjau &amp; Kirim<span
+                      >3 / 3</span
+                    >
+                  </div>
+                  <dl class="rv" id="rv"></dl>
+                  <label class="chk"
+                    ><input type="checkbox" id="setuju" /><span
+                      >Saya menyatakan data di atas benar dan bersedia menerima
+                      keputusan pejabat yang berwenang memberikan cuti.</span
+                    ></label
+                  >
+                </div>
+              </form>
+              <div class="nt e hid" id="gerr" style="margin: 16px 0 0"></div>
+              <div class="acts">
+                <button type="button" class="bk" id="prev">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"
+                    /></svg
+                  >Kembali</button
+                ><button type="button" class="pr" id="next">Lanjut</button>
+              </div>
+            </div>
+            <div id="done" class="hid"></div>
+          </div>
+        </div>
+      </section>
+      <div id="cetak"></div>
+    </div>
+    <button class="back" id="back">‹ &nbsp;Kembali ke Menu Awal</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
